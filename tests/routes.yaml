@@ -1,0 +1,5 @@
+- path: /v2/ping
+  methods: [get]
+  actions:
+      - service_id: 998a7c0b-3837-486c-8c66-490c248e005a
+        destination: /v1/ping

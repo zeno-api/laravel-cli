@@ -1,0 +1,46 @@
+{
+    "name": "zeno/laravel-cli",
+    "description": "Zeno laravel cli",
+    "license": "MIT",
+    "type": "library",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Iqbal Maulana",
+            "email": "iq.bluejack@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "zeno/signature": "^1.0",
+        "laravel/framework": "^8.0",
+        "guzzlehttp/guzzle": "^7.3",
+        "symfony/yaml": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zeno\\Laravel\\Cli\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ],
+        "psr-4": {
+            "Zeno\\Laravel\\Cli\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Zeno\\Laravel\\Cli\\Provider\\ZenoLaravelCliServiceProvider"
+            ]
+        }
+    }
+}
